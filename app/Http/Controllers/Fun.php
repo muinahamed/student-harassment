@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\URL;
 use Illuminate\Support\Facades\DB;
-use App\Models\Company;
+use App\Models\company;
 use App\Models\image;
 use App\Models\z;
 use App\Models\message;
@@ -35,10 +35,24 @@ class Fun extends Controller
       {
 
          $registration=0;
-         
 
-         DB::insert('insert into company(id,name,email,password,verified,username,food,hobby,singer,registration_num) value(?,?,?,?,?,?,?,?,?,?)',[null,$name,$email,$password,$verified,$username,$food,$hobby,$colour,$registration]);
-              return redirect('reg');
+         $ab=new company();
+
+         $ab->name=$name;
+         $ab->email=$email;
+         $ab->password=$password;
+         $ab->verified=$verified;
+         $ab->username=$username;
+         $ab->food=$food;
+         $ab->hobby=$hobby;
+         $ab->singer=$colour;
+         $ab->registration_num=$registration;
+         $ab->save();
+
+        
+
+
+          return redirect('reg');
       }else{
 
 
@@ -55,7 +69,23 @@ class Fun extends Controller
             }else
             {
 
-   DB::insert('insert into company(id,name,email,password,verified,username,food,hobby,singer,registration_num,regnum) value(?,?,?,?,?,?,?,?,?,?,?)',[null,$name,$email,$password,$verified,$username,$food,$hobby,$colour,$registration,$reg]);
+
+        $ab=new company();
+
+         $ab->name=$name;
+         $ab->email=$email;
+         $ab->password=$password;
+         $ab->verified=$verified;
+         $ab->username=$username;
+         $ab->food=$food;
+         $ab->hobby=$hobby;
+         $ab->singer=$colour;
+         $ab->registration_num=$registration;
+         $ab->regnum=$reg;
+         $ab->save();
+
+
+
 
      
 
@@ -84,10 +114,24 @@ class Fun extends Controller
       if($name=="admin"||$name=="studentadvisor"||$name=="hcell"||$name=="proctor"||$name=="VC")
       {
 
-         $registration=0;
-         
+      
+            $registration=0;
 
-         DB::insert('insert into company(id,name,email,password,verified,username,food,hobby,singer,registration_num) value(?,?,?,?,?,?,?,?,?,?)',[null,$name,$email,$password,$verified,$username,$food,$hobby,$colour,$registration]);
+         $ab=new company();
+
+         $ab->name=$name;
+         $ab->email=$email;
+         $ab->password=$password;
+         $ab->verified=$verified;
+         $ab->username=$username;
+         $ab->food=$food;
+         $ab->hobby=$hobby;
+         $ab->singer=$colour;
+         $ab->registration_num=$registration;
+         $ab->save();
+
+     
+      
               return redirect('firstr');
       }else{
 
@@ -103,7 +147,20 @@ class Fun extends Controller
               return view('de');
             }else
             {
-           DB::insert('insert into company(id,name,email,password,verified,username,food,hobby,singer,registration_num,regnum) value(?,?,?,?,?,?,?,?,?,?,?)',[null,$name,$email,$password,$verified,$username,$food,$hobby,$colour,$registration,$reg]);
+
+    $ab=new company();
+
+         $ab->name=$name;
+         $ab->email=$email;
+         $ab->password=$password;
+         $ab->verified=$verified;
+         $ab->username=$username;
+         $ab->food=$food;
+         $ab->hobby=$hobby;
+         $ab->singer=$colour;
+         $ab->registration_num=$registration;
+         $ab->regnum=$reg;
+         $ab->save();
 
 
 
@@ -618,7 +675,13 @@ class Fun extends Controller
                  }
                  
               else{
-                DB::insert('insert into studenta(id,name,email,message) value(?,?,?,?)',[null,$name,$email,$message]);
+
+                $ab=new studenta();
+                $ab->name=$name;
+                $ab->email=$email;
+                $ab->message=$message;
+                $ab->save();
+                
                 
                $data=DB::table('studenta')->where('email',$email)->get()->take(-5);
 
@@ -637,8 +700,13 @@ class Fun extends Controller
                   return view('chat',compact('data'));
 
                   }else{
-                     
-                   DB::insert('insert into proctor(id,name,email,message) value(?,?,?,?)',[null,$name,$email,$message]);
+
+                     $ab=new proctor();
+                $ab->name=$name;
+                $ab->email=$email;
+                $ab->message=$message;
+                     $ab->save();
+               
                    $data=DB::table('proctor')->where('email',$email)->get()->take(-5);
                     session()->put('previous',$message);
                     return view('chat',compact('data'));
@@ -658,8 +726,15 @@ class Fun extends Controller
 
              
                 else{ 
+
+
+                   $ab=new hcell();
+                $ab->name=$name;
+                $ab->email=$email;
+                $ab->message=$message;
+                $ab->save();
                  
-                  DB::insert('insert into hcell(id,name,email,message) value(?,?,?,?)',[null,$name,$email,$message]);
+                 
                     session()->put('previous',$message);
              
                    
@@ -1417,7 +1492,14 @@ public function f()
          $c=DB::table('studenta')->where('email',session('key'))->get()->count();
           if($c>0)
           {
-              DB::insert('insert into studenta(id,name,email,message) value(?,?,?,?)',[null,$name,$email,$message]);
+
+
+               $ab=new studenta();
+                $ab->name=$name;
+                $ab->email=$email;
+                $ab->message=$message;
+                $ab->save();
+              
 
                return redirect ('stchat');
           }else
@@ -1443,7 +1525,15 @@ public function f()
          $c=DB::table('proctor')->where('email',session('key'))->get()->count();
           if($c>0)
           {
-              DB::insert('insert into proctor(id,name,email,message) value(?,?,?,?)',[null,$name,$email,$message]);
+
+
+            $ab=new proctor();
+                $ab->name=$name;
+                $ab->email=$email;
+                $ab->message=$message;
+                $ab->save();
+
+             
 
                return redirect ('stchat');
           }else
@@ -1465,7 +1555,13 @@ public function f()
          $c=DB::table('hcell')->where('email',session('key'))->get()->count();
           if($c>0)
           {
-              DB::insert('insert into hcell(id,name,email,message) value(?,?,?,?)',[null,$name,$email,$message]);
+
+             $ab=new  hcell();
+                $ab->name=$name;
+                $ab->email=$email;
+                $ab->message=$message;
+                $ab->save();
+              
 
                return redirect ('stchat');
           }else
@@ -1507,7 +1603,15 @@ public function f()
         $nazmul=Company::where('email',$email)->where('password',$password)->get()->count();
         if($nazmul>0)
         {
-          DB::insert('insert into ad(id,email,password,phone,message) value(?,?,?,?,?)',[null,$email,$password,$phone,$message]);
+              $ab=new studenta();
+                $ab->email=$email;
+                $ab->password=$password;
+                $ab->phone=$phone;
+                $ab->message=$message;
+                $ab->save();
+
+
+        
           return redirect('/');
         }else
         {
@@ -1550,7 +1654,15 @@ public function f()
         $phone=$request->input('phone');
         $message=$request->input('message');
         $email=session('key');
-         DB::insert('insert into ad(id,email,phone,message) value(?,?,?,?)',[null,$email,$phone,$message]);
+
+
+         $ab=new studenta();
+        
+                $ab->email=$email;
+                $ab->phone=$phone;
+                $ab->message=$message;
+                $ab->save();
+        
          return redirect('/st');
       }
 
