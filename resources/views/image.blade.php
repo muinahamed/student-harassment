@@ -12,7 +12,7 @@
 
 <form id="accesspanel" action="{{URL::to('/image')}}"   method="post" enctype="multipart/form-data">
         @csrf
-  <h1 id="litheader">COMPLAIN HERE</h1>
+  <h1 id="litheader">APPLY FOR SEAT</h1>
 
 
 
@@ -36,7 +36,7 @@
 
     <p>
       
-       <textarea  required="required"  type="text" name="name" placeholder="Type your complain"></textarea>
+       <textarea  required="required"  type="text" name="name" placeholder="Enter your Message"></textarea>
 
     </p>
 

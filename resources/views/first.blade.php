@@ -110,6 +110,9 @@ li.dropdown {
   font-size:20px;
   
 }
+.logo1 img{
+  width: 60px;
+}
 </style>
     <!-- Modernizer for Portfolio -->
     <script src="{{ asset('js/modernizer.js') }}"></script>
@@ -179,7 +182,7 @@ li.dropdown {
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="index.html"><img src="{{ asset('img/logos/log.png') }}" alt="image"></a>
+                    <a class="navbar-brand logo1" href="index.html"><img src="{{ asset('img/logos/diu.jpg') }}" alt="image"></a>
                 </div>
                 <div id="navbar" class="navbar-collapse collapse">
                     <ul class="nav navbar-nav navbar-right">
@@ -325,10 +328,8 @@ li.dropdown {
                     <div class="message-box">
                         <h4>About Us</h4>
                         <h2>Welcome Here</h2> <br>
-                        <p class="lead"> this website works with all aspects of harrasment in campus..you can complain here..give some suggestion ..share your problem related our campus... </p> <br>
-
-                        <p> We will take your complain and pass it to the administrator of our campus. You can see your complain's current status such as Pending, In processing or Decision maked. Don't worry we always with you when you are in trouble and harassed by someone. Your complain will judge by honorable administrator. You also can get advice from the advisor(proffesor). <br>
-                        Be calm, your identity will be hidden from everyone even administrator also. 
+                        <p class="lead">This webside is design for hostel management.
+                          we work for Defordin hostel management.Student can  send us a request for a seat.And admin can Approve. 
                         </p>
                     </div><!-- end messagebox -->
                 </div><!-- end col -->
@@ -353,7 +354,7 @@ li.dropdown {
                 <div class="col-md-6">
                     <div class="post-media wow fadeIn">
                         <img src="{{ asset('img/about_2.png') }}" alt="" class="img-responsive img-rounded">
-                        <a href="https://www.youtube.com/watch?v=wu3RzCGEEpY" data-rel="prettyPhoto[gal]" class="playbutton"><i class="flaticon-play-button"></i></a>
+                        <a href="https://www.youtube.com/watch?v=O4VoBlTpwFc" data-rel="prettyPhoto[gal]" class="playbutton"><i class="flaticon-play-button"></i></a>
                     </div><!-- end media -->
                 </div><!-- end col -->
 
@@ -366,12 +367,10 @@ li.dropdown {
                         <h2>Before complain read the rules carefully</h2>
                      <!--   <p class="lead"> this website works with all aspects of harrasment in campus..you can complain here..give some suggestion ..share your problem related our campus... </p> -->
 
-                        <p> 1. You have to be the Student of SUST.</p>
-                        <p> 2. Complain when you are harassed by someone related to this campus.</p>
-                        <p>3.  Explain problem in easy manner </p>
-                        <p>4.  Include picture if it possible to complain</p>
-                        <p>5.  Dont't be afraid.Share your problem.</p>
-                        <p>6. Your all information is in databse so don't dare to misbehave</p>
+                        <p> 1. You have to be the Student of Defordin University.</p>
+                        <p>2.  Explain problem in easy manner </p>
+                        <p>3.  Dont't be afraid.Share your problem.</p>
+                        <p>4. Your all information is in databse so don't dare to misbehave</p>
                      
                             
  <a href="#services" class="btn btn-light btn-radius btn-brd grd1"></a>
@@ -394,10 +393,10 @@ li.dropdown {
                 <div class="col-md-4 col-sm-4 col-xs-12">
                     <div class="widget clearfix">
                         <div class="widget-title">
-                            <img src="{{ asset ('img/logos/log-2.png') }}" alt="" />
+                           
                         </div>
-                        <p> If you are harassed by someone or a group in the campus just complain here. Remember that your identity will be secret. We are with you. </p>
-                        <p> Just complain to make your campus clean from violence.</p>
+                        <p>If you badly need a seat please share with us. Remember that your identity will be secret. We are with you. </p>
+                        <p> Just beleave on us</p>
                     </div><!-- end clearfix -->
                 </div><!-- end col -->
 
@@ -418,10 +417,10 @@ li.dropdown {
                 <div class="col-md-4 col-sm-4 col-xs-12">
                     <div class="footer-distributed widget clearfix">
                          <div class="widget-title">
-                            <img src="{{ asset ('img/logos/sLogo.png') }}" alt="" />
+                            <img src="{{ asset ('img/logos/diu.jpg') }}" alt="" />
                         </div>
-                        <p><i class="fa fa-globe"></i> Sylhet Engineering College </p>
-                        <p></a><i class="fa fa-envelope"></i> system.admin@sust.edu</p>
+                        <p><i class="fa fa-globe"></i> DIU </p>
+                        <p></a><i class="fa fa-envelope"></i> system.admin@DIU.edu</p>
                         <p><i class="fa fa-phone"></i> 880-821-713491, 714479, 713850, 717850, 716123, 715393</p>
                         <p><i class="fa fa-fax">  880-821-715257, 725050</i></p>                      
                     </div><!-- end clearfix -->

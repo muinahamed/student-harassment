@@ -88,6 +88,9 @@ li.dropdown {
   .dropdown:hover .dropdown-content {
   display: block;
 }
+.logo1 img{
+  width: 60px;
+}
 </style>
     <!-- Modernizer for Portfolio -->
     <script src="{{ asset('js/modernizer.js') }}"></script>
@@ -156,15 +159,15 @@ li.dropdown {
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="index.html"><img src="{{ asset('img/logos/log.png') }}" alt="image"></a>
+                    <a class="navbar-brand logo1" href="index.html"><img src="{{ asset('img/logos/Diu.jpg') }}" alt="image"></a>
                 </div>
                 <div id="navbar" class="navbar-collapse collapse">
                     <ul class="nav navbar-nav navbar-right">
 
                         <li><a class="active" href="/">logout</a></li>
-                        <li><a href="/new">Complain status</a></li>
+                        <li><a href="/new">status</a></li>
                          
-                            <li><a href="/image">Complains Box</a></li>
+                            <li><a href="/image">Apply for a seat</a></li>
 
 
                      
@@ -183,12 +186,12 @@ li.dropdown {
           <div class="row">
             <div class="slider-content-area">
               <div class="slide-text">
-                <h1 class="homepage-three-title"> Complain On <span> Harassment </span> </h1>
-                <h2> If you see harassment happening, speak up. Being harassed is terrible; having bystanders pretend they don't notice is infinitely worse. <br>
+                <h1 class="homepage-three-title"> Apply for  <span> seat </span> </h1>
+                <h2> If are seaking for seat please came here . <br>
                                  &nbsp;  -- Celeste Ng
                                 </h2>
                 <div class="slider-content-btn">
-                  <a class="button btn btn-light btn-radius btn-brd" href="/image">Complain Now</a>
+                  <a class="button btn btn-light btn-radius btn-brd" href="/image">apply for a seat</a>
                 </div>
               </div>
             </div>
@@ -201,12 +204,12 @@ li.dropdown {
           <div class="row">
             <div class="slider-content-area">
               <div class="slide-text">
-                <h1 class="homepage-three-title"> Complain On <span> Harassment </span> </h1>
-                <h2>We must have zero tolerance for sexual harassment, even if the perpetrator is somebody we like and admire. <br>
+                <h1 class="homepage-three-title">We can give you the best facility in  <span> bangladesh </span> </h1>
+                <h2>A beautifull campus give the best life <br>
                                  &nbsp;  -- Ana Navarro
                                 </h2>
                                 <div class="slider-content-btn">
-                                    <a class="button btn btn-light btn-radius btn-brd" href="/image">Complain Now</a>
+                                    <a class="button btn btn-light btn-radius btn-brd" href="/image">Apply for a seat</a>
                                 </div>
               </div>
             </div>
@@ -219,14 +222,14 @@ li.dropdown {
           <div class="row">
             <div class="slider-content-area">
               <div class="slide-text">
-                <h1 class="homepage-three-title"> Complain On <span> Harassment </span> </h1>
-                <h2>Intimidation, harassment and violence have no place in a democracy. #MeToo is a welcome change, and I would encourage student to call out harassment issues. </h2>
+                <h1 class="homepage-three-title"> We can give you<span> security </span> </h1>
+                <h2>We give healthy food and best hygenic culture to bost your  study </h2>
                 <!--<div class="slider-content-btn">
                   <a class="button btn btn-light btn-radius btn-brd" href="#">Read More</a>
                   <a class="button btn btn-light btn-radius btn-brd" href="#">Contact</a>
                 </div>-->
                                 <div class="slider-content-btn">
-                                    <a class="button btn btn-light btn-radius btn-brd" href="/image">Complain Now</a>
+                                    <a class="button btn btn-light btn-radius btn-brd" href="/image">Apply for a seat</a>
                                 </div>
               </div>
             </div>
@@ -243,9 +246,9 @@ li.dropdown {
                     <div class="message-box">
                         <h4>About Us</h4>
                         <h2>Welcome Here</h2>
-                        <p class="lead"> this website works with all aspects of harrasment in campus..you can complain here..give some suggestion ..share your problem related our campus... </p>
+                        <p class="lead"> this website works with the hostel seat management of our university </p>
 
-                        <p> We will take your complain and pass it to the administrator of our campus. You can see your complain's current status. Don't worry we always with you when you are in trouble and harassed by someone. Your complain will judge by honorable administrator. You also can get advice from the advicer(proffesor). </p>
+                        <p> We take your request.And comunicate with you all this mater</p>
 
                         <a href="#" class="btn btn-light btn-radius btn-brd grd1"></a>
                     </div><!-- end messagebox -->
@@ -272,7 +275,7 @@ li.dropdown {
                     <div class="message-box">
                         <h4>Who We are</h4>
                         <h2>We Are the solution of your problem</h2>
-                        <p class="lead"> We are the intermediary between you and the administration in harassment issue. </p>
+                        <p class="lead"> We are the intermediary between you and the administration in hostel management issu. </p>
 
                         <p> Confidentiality: The privacy of the persons involved will be protected to the extent possible. Disclosures may be required by law or to those who need to know within the context of the investigation, analysis, appeal, prevention of recurrence, or correction of misconduct.  Therefore, a guarantee of confidentiality is not provided.  Should an accuser or reporter request confidentiality and that no action be taken, the district must still discharge its duties and obligations to prevent and correct the harassment. </p>
 
@@ -286,13 +289,13 @@ li.dropdown {
                 <div class="col-md-6">
                     <div class="message-box">
                         <h4>Rules</h4>
-                        <h2>Before complain read the rules carefully</h2>
+                        <h2>Before apply read the rules carefully</h2>
                      <!--   <p class="lead"> this website works with all aspects of harrasment in campus..you can complain here..give some suggestion ..share your problem related our campus... </p> -->
 
-                        <p> 1. You have to be the Student of SUST.</p>
-                        <p> 2. Complain when you are harassed by someone related to this campus.</p>
-                        <p>3.  Explain problem in easy manner </p>
-                        <p>4.  Include picture if it possible to complain</p>
+                        <p> 1. You have to be the Student of DIU.</p>
+                        
+                        <p>2.  Explain problem in easy manner </p>
+                        <p>3.  Include picture to apply for the seat</p>
                         <p>5.  Dont't be afraid.Share your problem.</p>
                         <p>6. Your all information is in databse so don't dare to misbehave</p>
                      
@@ -321,10 +324,10 @@ li.dropdown {
                 <div class="col-md-4 col-sm-4 col-xs-12">
                     <div class="widget clearfix">
                         <div class="widget-title">
-                            <img src="{{ asset ('img/logos/log-2.png') }}" alt="" />
+                         
                         </div>
-                        <p> If you are harassed by someone or a group in the campus just complain here. Remember that your identity will be secret. We are with you. </p>
-                        <p> Just complain to make your campus clean from violence.</p>
+                        
+                        <p> Just complain to make your  problem easy</p>
                     </div><!-- end clearfix -->
                 </div><!-- end col -->
 
@@ -338,7 +341,7 @@ li.dropdown {
                             <li><a href="#">Home <span class="icon icon-arrow-right2"></span></a></li>
           
                            
-              <li><a href="/image">Complain Box <span class="icon icon-arrow-right2"></span></a></li>
+              <li><a href="/image">Apply for the seat<span class="icon icon-arrow-right2"></span></a></li>
              
                            
                                 <li><a href="/aboutus">About us <span class="icon icon-arrow-right2"></span></a></li>
@@ -353,10 +356,10 @@ li.dropdown {
                 <div class="col-md-4 col-sm-4 col-xs-12">
                     <div class="footer-distributed widget clearfix">
                          <div class="widget-title">
-                            <img src="{{ asset ('img/logos/sLogo.png') }}" alt="" />
+                            <img src="{{ asset ('img/logos/diu.jpg') }}" alt="" />
                         </div>
-            <p><i class="fa fa-globe"></i> www.sust.edu </p>
-                        <p></a><i class="fa fa-envelope"></i> system.admin@sust.edu</p>
+            <p><i class="fa fa-globe"></i> www.DIU.edu </p>
+                        <p></a><i class="fa fa-envelope"></i> system.admin@Diu.edu</p>
                         <p><i class="fa fa-phone"></i> 880-821-713491, 714479, 713850, 717850, 716123, 715393</p>
                         <p><i class="fa fa-fax">  880-821-715257, 725050</i></p>                      
                     </div><!-- end clearfix -->

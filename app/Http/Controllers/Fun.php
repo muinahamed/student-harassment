@@ -16,14 +16,14 @@ class Fun extends Controller
 {
   
   
-	
+  
     public function store(request $request)
     {
-    	$name=$request->input('name');
+      $name=$request->input('name');
      
       
-    	$email=$request->input('email');
-    	$password=$request->input('password');
+      $email=$request->input('email');
+      $password=$request->input('password');
       $verified="VERIFIED";
       $username=$request->input('username');
       $food=$request->input('food');
@@ -252,26 +252,26 @@ class Fun extends Controller
     public function index(request $request)
   {
 
-    	$ab=new image();
+      $ab=new image();
        $ab->status="pending";
       $ab->email=(session('key'));
       $ab->username=(session('ke'));
-    	$ab->name=$request->input('name');
+      $ab->name=$request->input('name');
       $ab->type=$request->input('type');
       $mu=$request->hasfile('image');
 
      
-    	
+      
       if($mu)
-    	{
+      {
 
          $file=$request->file('image');
          $extension=$file->getClientOriginalExtension();
          $filename=time() . '.' .$extension;
          $file->move('uploads/img/',$filename);
          $ab->image=$filename;
-    		
-    	}
+        
+      }
       else
       {
         //return $request;
@@ -279,8 +279,8 @@ class Fun extends Controller
 
          
       }
-    	$ab->save();
-    	return view('studentpage');
+      $ab->save();
+      return view('studentpage');
 
   }  
 
@@ -301,16 +301,16 @@ class Fun extends Controller
         
         
     
- 	  // $data= image::all();
+    // $data= image::all();
      $opol=(session('key'));
    
      $data=image::where('type',$opol)->orderby('id', 'desc')->get();
    //  $data=$data->sortBy('id', 'desc');
      
 
- 	     return view('output',['data'=>$data]);
+       return view('output',['data'=>$data]);
        
- 	 
+   
      }
 
 
@@ -1144,6 +1144,7 @@ class Fun extends Controller
         
 
         $email=session('key');
+       
         $sa=DB::table('studenta')->where('email',$email)->get()->take(-5);
         $p=DB::table('proctor')->where('email',$email)->get()->take(-5);
         $h=DB::table('hcell')->where('email',$email)->get()->take(-5);
@@ -1603,7 +1604,7 @@ public function f()
         $nazmul=Company::where('email',$email)->where('password',$password)->get()->count();
         if($nazmul>0)
         {
-              $ab=new studenta();
+                $ab=new ad();
                 $ab->email=$email;
                 $ab->password=$password;
                 $ab->phone=$phone;

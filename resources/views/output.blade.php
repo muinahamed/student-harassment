@@ -24,7 +24,7 @@
                      <!-- END profile-header-img -->
                      <!-- BEGIN profile-header-info -->
                      <div class="profile-header-info">
-                        <h2 class="m-t-10 m-b-5">Complain status</h2>
+                        <h2 class="m-t-10 m-b-5">Student Application Status</h2>
                        
                      </div>
 
